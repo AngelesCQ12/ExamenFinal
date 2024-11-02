@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@700&family=Work+Sans:wght@400;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*permite deslizar al hacer click en los links en el menu*/
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+.contenedor-header{
+    background: #0d0c1d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 5px solid rgba(71, 73, 115);
+
+}
+.contenedor-header header{
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Audiowide';
+    font-size: 36px;
+    color: #a69cac;
+text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #c35fc7;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #0d0c1d;
+}
+
+.nav-responsive{
+    background-color: #0d0c1d;
+    color: #a69cac;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*SECCION INICIO*/
+.inicio{
+    background-color: #0d0c1d; 
+    height: 100vh;
+    color: #a69cac;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{  
+    padding: 40px;
+    max-width: 247px;
+    max-height: 560px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 7px solid rgba(71, 73, 115);
+    background: #0d0c1d;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+
+}
+.inicio .contenido-banner img:hover{
+    box-shadow: 0 0 5px rgba(120, 33, 160, 0.404), 0 0 15px rgb(149, 31, 160),0 0 30px rgb(71, 4, 92),0 0 50px rgb(59, 12, 87);
+    border: 7px solid rgba(71, 73, 115);
+    transition: .3s;
+}
+
+.inicio .contenido-banner h1:hover{
+    text-shadow: 0 0 5px rgba(120, 33, 160, 0.404), 0 0 15px rgb(149, 31, 160),0 0 30px rgb(71, 4, 92),0 0 50px rgb(59, 12, 87);
+   color:  rgba(71, 73, 115);
+    transition: .3s;
+}
+
+.inicio .contenido-banner img{
+    border: 6px solid #0d0c1d;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 10%;
+    
+}
+.inicio .lineaV{
+    border-left: 7px solid #0d0c1d;
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    margin-left: 3px;
+    top: 1px;
+    
+}
+.inicio .contenido-banner h1{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Audiowide';
+    color: #a69cac;
+
+}
+
+.inicio .contenido-banner h2{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+footer{
+    background-color: #0d0c1d;
+    color: #a69cac;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #c35fc7;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+

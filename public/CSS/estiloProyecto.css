@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@700&family=Work+Sans:wght@400;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*permite deslizar al hacer click en los links en el menu*/
+    scroll-behavior: smooth;
+
+}
+
+/*MENU*/
+.contenedor-header{
+    background: #0d0c1d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 5px solid rgba(71, 73, 115);
+
+}
+.contenedor-header header{
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Audiowide';
+    font-size: 36px;
+    color: #a69cac;
+text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #a69cac;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #0d0c1d;
+}
+
+.nav-responsive{
+    background-color: #0d0c1d;
+    color: #a69cac;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
